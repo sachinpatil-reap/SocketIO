@@ -1,18 +1,16 @@
-//
-//  ViewController.swift
-//  SocketIO
-//
-//  Created by sachinpatil-reap on 06/05/2024.
-//  Copyright (c) 2024 sachinpatil-reap. All rights reserved.
-//
+
 
 import UIKit
+import SocketIO
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var log = SocketLoggerData()
+        log.printLog()
+        log.privateMethod()
     }
 
     override func didReceiveMemoryWarning() {
